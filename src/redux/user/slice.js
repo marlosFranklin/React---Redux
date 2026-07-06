@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   user: null,
+  users: [],
 };
 
 export const userSlice = createSlice({
@@ -57,10 +58,18 @@ export const userSlice = createSlice({
         },
       };
     },
+    fetchUsers: (state) => {
+      console.log("chamou fetchUsers", state);
+    },
   },
 });
 
-export const { createUser, logoutUser, addAddsress, deleteAddress } =
-  userSlice.actions;
+export const {
+  createUser,
+  logoutUser,
+  addAddsress,
+  deleteAddress,
+  fetchUsers,
+} = userSlice.actions;
 
 export default userSlice.reducer;

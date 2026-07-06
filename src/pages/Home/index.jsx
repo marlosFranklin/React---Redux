@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import toast, { Toaster } from "react-hot-toast";
 
 import { useSelector } from "react-redux";
-import { deleteAddress } from "../../redux/user/slice";
+import { deleteAddress, fetchUsers } from "../../redux/user/slice";
 
 export function Home() {
   const dispatch = useDispatch();
@@ -16,6 +16,9 @@ export function Home() {
     dispatch(deleteAddress());
   }
 
+  function handleFetchUsers() {
+    dispatch(fetchUsers());
+  }
   return (
     <>
       <Header />
@@ -55,6 +58,12 @@ export function Home() {
                 </div>
               </>
             )}
+
+            <hr />
+            <br />
+            <h2>Lista de usuários</h2>
+            <button onClick={handleFetchUsers}>Buscar usuários</button>
+            <br />
           </div>
         </main>
       </div>
