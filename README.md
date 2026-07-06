@@ -1,16 +1,107 @@
-# React + Vite
+# 🚀 React + Redux - Projeto de Estudos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido com o objetivo de estudar e praticar o gerenciamento de estado global utilizando **Redux** em uma aplicação React.
 
-Currently, two official plugins are available:
+A proposta foi entender como o Redux funciona na prática, desde a criação da Store até o consumo dos dados pelos componentes, utilizando as boas práticas recomendadas pelo ecossistema moderno do React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+<p align="center">
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img width="800"  alt="reduxGif" src="https://github.com/user-attachments/assets/764cb2cd-eb58-45b8-9d3b-553881a260ba" />
+</p>
 
-## Expanding the ESLint configuration
+## 🎯 Objetivos do projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Durante o desenvolvimento deste projeto, pratiquei os seguintes conceitos:
+
+- Configuração do Redux Toolkit
+- Criação da Store
+- Criação de Slices
+- Definição de Actions e Reducers
+- Compartilhamento de estado global
+- Uso dos hooks `useSelector` e `useDispatch`
+- Organização da estrutura do Redux
+- Persistência de dados (quando necessário)
+- Integração entre React e Redux
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- React 19
+- Redux Toolkit
+- React Redux
+- React Router DOM
+- Vite
+- JavaScript
+
+---
+
+## 📂 Estrutura do projeto
+
+```text
+src/
+├── components/
+├── pages/
+├── redux/
+│   ├── store.js
+│   ├── slices/
+│   └── ...
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ▶️ Como executar o projeto
+
+Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+Entre na pasta do projeto
+
+```bash
+cd projeto-redux
+```
+
+Instale as dependências
+
+```bash
+npm install
+```
+
+Execute a aplicação
+
+```bash
+npm run dev
+```
+
+---
+
+## 📚 Aprendizados
+
+Este projeto foi importante para consolidar meu entendimento sobre gerenciamento de estado global com Redux.
+
+Os principais aprendizados foram:
+
+- Quando utilizar estado global ao invés de props.
+- Como organizar a Store da aplicação.
+- Como Actions e Reducers trabalham em conjunto.
+- Como o Redux Toolkit simplifica a configuração do Redux.
+- Como compartilhar informações entre diferentes componentes de forma escalável.
+- Como manter uma arquitetura mais organizada conforme a aplicação cresce.
+
+---
+
+
+
+
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Marlos Santos** como projeto de estudos em React e Redux.
+
